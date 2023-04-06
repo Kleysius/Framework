@@ -401,7 +401,7 @@ footer ul li a {
     }
 
     .bootstrap .intro p {
-        font-size: 16px;
+        font-size: 4vw;
         padding: 20px 0 20px;
         text-align: center;
     }
@@ -417,11 +417,14 @@ footer ul li a {
 
     .content {
         width: 100%;
-        padding: 20px;
     }
 
     .foundation {
         background: linear-gradient(140deg, rgba(10, 26, 87, 1) 0%, rgba(181, 119, 94, 1) 98%);
+    }
+
+    .foundation .intro {
+        padding-bottom: 0;
     }
 
     .foundation h2 {
@@ -437,9 +440,31 @@ footer ul li a {
         padding: 10px;
     }
 
+    .foundation .avantages {
+        border: 2px solid white;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+    .foundation .avantages h3 {
+        padding-top: 10px;
+    }
+
+    .foundation .inconv {
+        border: 2px solid white;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+
+    .foundation .inconv h3 {
+        padding-bottom: 0px;
+        padding-top: 10px;
+    }
+
     .foundation p {
         font-size: 16px;
         text-align: center;
+        padding: 15px;
     }
 
     .foundation ul li {
