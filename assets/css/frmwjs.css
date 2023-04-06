@@ -35,7 +35,7 @@ header h1 a:hover {
     background: none;
 }
 
-header h2 a{
+header h2 a {
     position: relative;
     text-decoration: none;
     margin-left: 50px;
@@ -62,7 +62,7 @@ header h2 a:hover::after {
     transform: scaleX(1);
 }
 
-.sousheader h2{
+.sousheader h2 {
     text-align: center;
     font-size: 25px;
     padding: 10px;
@@ -79,17 +79,17 @@ header h2 a:hover::after {
     padding: 3% 11% 3% 11%;
 }
 
-.react .intro{
+.react .intro {
     padding-bottom: 25px;
 }
 
-.react .intro img{
+.react .intro img {
     height: 10%;
     width: 10%;
     padding-right: 10px;
 }
 
-.react h2{
+.react h2 {
     font-size: 50px;
     margin-bottom: 20px;
     color: #61dafb;
@@ -97,7 +97,7 @@ header h2 a:hover::after {
     align-items: center;
 }
 
-.react h3{
+.react h3 {
     font-size: 35px;
     color: #61dafb;
 }
@@ -106,7 +106,7 @@ header h2 a:hover::after {
     display: flex;
 }
 
-.react p{
+.react p {
     font-weight: 100;
     padding: 10px 10px;
     font-size: 20px;
@@ -125,25 +125,25 @@ header h2 a:hover::after {
     border-radius: 20px;
 }
 
-.react .avantages h3{
+.react .avantages h3 {
     padding-bottom: 10px;
     padding-top: 20px;
     text-align: center;
 }
 
-.react .inconv h3{
+.react .inconv h3 {
     padding-bottom: 10px;
     padding-top: 20px;
     text-align: center;
 }
 
-.react .avantages ul li{
+.react .avantages ul li {
     font-weight: 100;
     padding: 10px 10px 20px 10px;
     font-size: 20px;
 }
 
-.react .inconv ul li{
+.react .inconv ul li {
     font-weight: 100;
     padding: 10px;
     font-size: 20px;
@@ -158,28 +158,28 @@ header h2 a:hover::after {
     padding: 3% 11% 3% 11%;
 }
 
-.angular .intro{
+.angular .intro {
     padding-bottom: 25px;
 }
 
-.angular .intro img{
+.angular .intro img {
     height: 10%;
     width: 10%;
     padding-right: 10px;
 }
 
-.angular h2{
+.angular h2 {
     font-size: 50px;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
 }
 
-.angular h3{
+.angular h3 {
     font-size: 35px;
 }
 
-.angular .avantages h3{
+.angular .avantages h3 {
     padding-bottom: 10px;
     padding-top: 20px;
     text-align: center;
@@ -189,18 +189,18 @@ header h2 a:hover::after {
     text-align: center;
 }
 
-.angular .inconv h3{
+.angular .inconv h3 {
     padding-bottom: 10px;
     padding-top: 20px;
 }
 
-.angular p{
+.angular p {
     font-weight: 100;
     padding: 20px 10px;
     font-size: 20px;
 }
 
-.angular .avantages ul li{
+.angular .avantages ul li {
     font-weight: 100;
     padding: 10px 10px 20px 10px;
     font-size: 20px;
@@ -234,7 +234,7 @@ footer ul li a {
     border-bottom: 1px solid #ffffff;
 }
 
-.row li a{
+.row li a {
     font-size: 15px;
 }
 
@@ -281,118 +281,162 @@ footer ul li a {
     color: #1a1a1a;
 }
 
-@media (max-width: 768px){
-    header{
+@media (max-width: 768px) {
+    header {
         display: flex;
         align-items: center;
-        padding: 25px 20px;
+        padding: 10px 10px;
     }
 
-    header h1 a{
-        font-size: 30px;
-        padding: 15px;
+    header h1 {
+        display: flex;
     }
 
-    header h2{
-        font-size: 20px;
-        font-weight: 100;
+    header h2 {
+        display: flex;
     }
 
-    .react{
-        padding: 50px;
+    header h1 a {
+        font-size: clamp(10px, 4vw, 20px);
+        padding: 10px;
     }
 
-    .react h2{
+    header h2 a {
+        font-size: clamp(10px, 4vw, 20px);
+        font-weight: 600;
+    }
+
+    .sousheader h2 {
+        font-size: 4vw;
+    }
+
+    .containerAI {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .react {
+        padding: 10px;
+    }
+
+    .react h2 {
         font-size: 35px;
         display: flex;
         justify-content: center;
+        margin-bottom: 0;
     }
 
-    .react h3{
+    .react h3 {
         font-size: 25px;
         text-align: center;
         padding: 10px;
     }
 
-    .react .intro img{
+    .react .intro img {
         height: 40px;
         width: 70px;
         padding-right: 20px;
     }
-    
-    .react p{
+
+    .react p {
         font-size: 16px;
         text-align: center;
     }
 
-    .react .avantages ul li{
+    .react .avantages {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .react .avantages ul li {
         font-size: 16px;
     }
 
-    .react .inconv ul li{
+    .react .inconv ul li {
         font-size: 16px;
     }
 
-    .angular{
-        padding: 50px;
+    .react .inconv {
+        width: 100%;
+        margin-bottom: 20px;
     }
 
-    .angular h2{
+    .angular {
+        padding: 10px;
+    }
+
+    .angular .intro img {
+        height: 50px;
+        width: 65px;
+    }
+
+    .angular h2 {
         font-size: 35px;
         display: flex;
         justify-content: center;
     }
 
-    .angular h3{
+    .angular h3 {
         font-size: 25px;
         text-align: center;
         padding: 10px;
     }
 
-    .angular p{
+    .angular p {
         font-size: 16px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .angular .avantages {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .angular .inconv {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .angular .avantages ul li {
+        font-size: 16px;
+    }
+
+    .row {
+        padding: 15px;
         text-align: center;
     }
 
-    .angular .avantages ul li{
-        font-size: 16px;
-    }
-
-    .row{
-        padding: 15px;
-    }
-
-    .row h3{
-        font-size: 16px;
+    .row h3 {
+        font-size: 3vw;
     }
 
     .row li {
-        font-size: 12px;
+        font-size: 2vw;
     }
 
-    .row li a{
-        font-size: 12px;
+    .row li a {
+        font-size: 2vw;
     }
 
-    .logosocialmedia{
-        padding: 15px;
+    .logosocialmedia {
+        padding: 10px;
     }
 
     .logosocialmedia h3 {
-        font-size: 16px;
+        font-size: 3vw;
     }
 
-    .logosocialmedia ul img{
-        height: 38px;
-        width: 38px;
+    .logosocialmedia ul img {
+        height: 30px;
+        width: 30px;
     }
 
-    .copyright{
+    .copyright {
         padding: 20px 10px;
     }
 
-    .copyright p{
-        font-size: 12px;
+    .copyright p {
+        font-size: 2vw;
     }
-
 }

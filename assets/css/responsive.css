@@ -1,22 +1,28 @@
 @media (max-width: 768px) {
 
     header {
-        padding: 20px 20px;
+        padding: 10px 10px;
     }
 
     #none {
         display: none;
     }
 
+    header h1 {
+        display: flex;
+    }
+
     header h1 a {
-        font-size: 30px;
-        padding: 15px;
+        font-size: clamp(10px, 3vw, 20px);
+        padding: 10px;
         color: white;
         font-weight: 100;
     }
 
     header nav a {
-        font-size: 20px;
+        font-size: clamp(10px, 3vw, 20px);
+        margin-right: 0;
+        margin: 10px;
     }
 
     #menuh {
@@ -24,8 +30,6 @@
     }
 
     #menuh ul {
-        display: flex;
-        justify-content: space-around;
         padding-left: 20px;
         animation-duration: 1s;
         animation-name: apear;
@@ -52,7 +56,7 @@
     }
 
     #text {
-        font-size: 30px;
+        font-size: 4vw;
     }
 
     .parallax {
@@ -60,27 +64,28 @@
     }
 
     .whatisframe {
-        padding: 50px;
+        padding: 20px;
     }
 
     .whatisframe h2 {
-        font-size: 35px;
+        font-size: 6vw;
     }
 
     .whatisframe p {
-        font-size: 16px;
+        font-size: 4vw;
+        line-height: 1.5;
     }
 
     .frontend {
-        padding: 50px 50px 20px 50px;
+        padding: 20px;
     }
 
     .frontend h2 {
-        font-size: 35px;
+        font-size: 6vw;
     }
 
     .frontend p {
-        font-size: 16px;
+        font-size: 4vw;
     }
 
     .linkto {
@@ -95,36 +100,37 @@
     }
 
     .linkto div a {
-        font-size: 16px;
+        font-size: 4vw;
     }
 
     .row {
         padding: 15px;
+        text-align: center;
     }
 
     .row h3 {
-        font-size: 16px;
+        font-size: 3vw;
     }
 
     .row li {
-        font-size: 12px;
+        font-size: 2vw;
     }
 
     .row li a {
-        font-size: 12px;
+        font-size: 2vw;
     }
 
     .logosocialmedia {
-        padding: 15px;
+        padding: 10px;
     }
 
     .logosocialmedia h3 {
-        font-size: 16px;
+        font-size: 3vw;
     }
 
     .logosocialmedia ul img {
-        height: 38px;
-        width: 38px;
+        height: 30px;
+        width: 30px;
     }
 
     .copyright {
@@ -132,7 +138,7 @@
     }
 
     .copyright p {
-        font-size: 12px;
+        font-size: 2vw;
     }
 
 }

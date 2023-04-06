@@ -322,17 +322,29 @@ footer ul li a {
     header {
         display: flex;
         align-items: center;
-        padding: 25px 20px;
+        padding: 10px 10px;
     }
 
-    header h1 a {
-        font-size: 30px;
-        padding: 15px;
+    header h1 {
+        display: flex;
     }
 
     header h2 {
-        font-size: 20px;
+        display: flex;
+    }
+
+    header h1 a {
+        font-size: clamp(10px, 4vw, 20px);
+        padding: 10px;
+    }
+
+    header h2 a {
+        font-size: clamp(10px, 4vw, 20px);
         font-weight: 100;
+    }
+
+    .sousheader h2 {
+        font-size: 4vw;
     }
 
     .containerAI {
@@ -341,13 +353,18 @@ footer ul li a {
     }
 
     .bootstrap {
-        padding: 50px;
+        padding: 15px 10px;
+    }
+
+    .bootstrap .intro {
+        padding: 0;
     }
 
     .bootstrap h2 {
         font-size: 35px;
         display: flex;
         justify-content: center;
+        margin: 0;
     }
 
     .bootstrap h3 {
@@ -365,31 +382,42 @@ footer ul li a {
     .bootstrap .avantages {
         margin-right: 0%;
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+
+    .bootstrap .avantages h3 {
+        font-size: 6vw;
     }
 
     .bootstrap .inconv {
         margin-right: 0%;
         width: 100%;
+        padding: 10px;
+    }
+
+    .bootstrap .inconv h3 {
+        font-size: 6vw;
     }
 
     .bootstrap .intro p {
         font-size: 16px;
+        padding: 20px 0 20px;
         text-align: center;
     }
 
     .bootstrap .inconv p {
-        font-size: 16px;
+        font-size: 4vw;
     }
 
     .bootstrap ul li {
-        font-size: 16px;
+        font-size: 4vw;
         padding: 10px;
     }
 
     .content {
         width: 100%;
-        padding: 50px;
+        padding: 20px;
     }
 
     .foundation {
@@ -400,6 +428,7 @@ footer ul li a {
         font-size: 35px;
         display: flex;
         justify-content: center;
+        margin: 0;
     }
 
     .foundation h3 {
@@ -420,31 +449,32 @@ footer ul li a {
 
     .row {
         padding: 15px;
+        text-align: center;
     }
 
     .row h3 {
-        font-size: 16px;
+        font-size: 3vw;
     }
 
     .row li {
-        font-size: 12px;
+        font-size: 2vw;
     }
 
     .row li a {
-        font-size: 12px;
+        font-size: 2vw;
     }
 
     .logosocialmedia {
-        padding: 15px;
+        padding: 10px;
     }
 
     .logosocialmedia h3 {
-        font-size: 16px;
+        font-size: 3vw;
     }
 
     .logosocialmedia ul img {
-        height: 38px;
-        width: 38px;
+        height: 30px;
+        width: 30px;
     }
 
     .copyright {
@@ -452,7 +482,7 @@ footer ul li a {
     }
 
     .copyright p {
-        font-size: 12px;
+        font-size: 2vw;
     }
 
 }

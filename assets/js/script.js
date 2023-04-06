@@ -10,14 +10,17 @@ window.addEventListener('load', function () {
 
 let percent = 0;
 function progressSim() {
-    document.querySelector('.text').innerHTML = percent + '%';
-    if (percent >= 100) {
-        clearTimeout(sim);
+    if (document.querySelector('.name')) {
+        document.querySelector('.name').innerHTML = percent + '%';
+        if (percent >= 100) {
+            clearTimeout(sim);
+        }
+        percent++;
     }
-    percent++;
+
 }
 
-let sim = setInterval(progressSim,50);
+let sim = setInterval(progressSim, 50);
 
 
 
