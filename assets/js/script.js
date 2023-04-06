@@ -1,45 +1,43 @@
-window.addEventListener('load', function () {
-    setTimeout(function () { // attendre 3 secondes pour masquer le loader
-        const pageLoader = document.querySelector('.page-loader');
-        pageLoader.style.opacity = '0';
-        setTimeout(function () { // attendre que l'animation se termine
-            pageLoader.style.display = 'none';
-        }, 500);
-    }, 5500);
-});
-
-let percent = 0;
-function progressSim() {
-    if (document.querySelector('.name')) {
-        document.querySelector('.name').innerHTML = percent + '%';
-        if (percent >= 100) {
-            clearTimeout(sim);
+if (document.querySelector('.page-loader')) {
+    window.addEventListener('load', function () {
+        setTimeout(function () { // attendre 3 secondes pour masquer le loader
+            const pageLoader = document.querySelector('.page-loader');
+            pageLoader.style.opacity = '0';
+            setTimeout(function () { // attendre que l'animation se termine
+                pageLoader.style.display = 'none';
+            }, 500);
+        }, 5500);
+    });
+    
+    let percent = 0;
+    function progressSim() {
+        if (document.querySelector('.name')) {
+            document.querySelector('.name').innerHTML = percent + '%';
+            if (percent >= 100) {
+                clearTimeout(sim);
+            }
+            percent++;
         }
-        percent++;
     }
-
 }
-
 let sim = setInterval(progressSim, 50);
 
-
-
-let text = document.getElementById('text');
-let leaf = document.getElementById('leaf');
-let hill1 = document.getElementById('hill1');
-let hill4 = document.getElementById('hill4');
-let hill5 = document.getElementById('hill5');
-
-window.addEventListener('scroll', () => {
-    let value = window.scrollY;
-    text.style.marginTop = value * 1.5 + 'px';
-    leaf.style.top = value * -1.5 + 'px';
-    leaf.style.left = value * 1.5 + 'px';
-    hill5.style.left = value * 1.5 + 'px';
-    hill4.style.left = value * -1.5 + 'px';
-    hill1.style.top = value * 0.5 + 'px';
-});
-
+if (document.querySelector('.parallax')) {
+    let text = document.getElementById('text');
+    let leaf = document.getElementById('leaf');
+    let hill1 = document.getElementById('hill1');
+    let hill4 = document.getElementById('hill4');
+    let hill5 = document.getElementById('hill5');
+    window.addEventListener('scroll', () => {
+        let value = window.scrollY;
+        text.style.marginTop = value * 1.5 + 'px';
+        leaf.style.top = value * -1.5 + 'px';
+        leaf.style.left = value * 1.5 + 'px';
+        hill5.style.left = value * 1.5 + 'px';
+        hill4.style.left = value * -1.5 + 'px';
+        hill1.style.top = value * 0.5 + 'px';
+    });
+}
 
 // Apparition des éléments au scroll
 
