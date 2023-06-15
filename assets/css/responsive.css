@@ -61,6 +61,7 @@
 
     .parallax {
         height: 40vh;
+        overflow: hidden;
     }
 
     .whatisframe {

@@ -5,6 +5,7 @@
 
 * {
     font-family: 'Poppins', sans-serif;
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
@@ -13,111 +14,6 @@ body {
     background: white;
     overflow-x: hidden;
 }
-
-/* PRELOADER CSS */
-.page-loader {
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    background: #272727;
-    z-index: 1000;
-}
-
-.page-loader .txt {
-    color: #666;
-    text-align: center;
-    top: 60%;
-    position: relative;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-weight: bold;
-}
-
-.name {
-    position: absolute;
-    font-size: 24px;
-    color: #939393;
-    font-family: 'Wallpoet', cursive;
-    text-align: center;
-    top: 50%;
-    width: 100%;
-    height: auto;
-    transform: translate(0, -50%);
-}
-
-.paper-progress-bar {
-    position: absolute;
-    top: 55%;
-    width: 100%;
-    height: 4px;
-    background: rgba(255, 255, 255, 0.1);
-    transform: translate(0, -50%);
-}
-
-.paper-progress-bar:before {
-    transform-origin: 0 0;
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.1) 10%, rgba(255, 255, 255, 0.4) 80%, white);
-    animation: progress1 5.5s linear forwards;
-}
-
-@keyframes progress1 {
-    0% {
-        transform: scalex(0);
-        opacity: .5;
-    }
-
-    90% {
-        transform: scalex(1);
-        opacity: 1;
-    }
-
-    92% {
-        transform: scalex(1);
-        opacity: 1;
-    }
-
-    100% {
-        transform: scalex(1);
-        opacity: 1;
-    }
-}
-
-.paper-progress-bar:after {
-    content: "";
-    position: absolute;
-    transform-origin: 90% 50%;
-    margin-left: -24px;
-    top: -9px;
-    width: 30px;
-    height: 21px;
-    border-radius: 2px;
-    background: rgba(255, 255, 255, 0.55);
-    filter: blur(8px);
-    box-shadow: 0 0 10px 6px rgba(210, 189, 255, 0.4), -20px 0 15px 4px rgba(210, 189, 255, 0.3), -40px 0 15px 2px rgba(210, 189, 255, 0.2), -60px 0 10px 1px rgba(210, 189, 255, 0.1), -80px 0 10px 1px rgba(210, 189, 255, 0.05);
-    animation: progress2 5.5s linear forwards;
-}
-
-@keyframes progress2 {
-    0% {
-        transform: scale(0.3, 0.8) translatez(0);
-        opacity: 0;
-    }
-
-    90% {
-        transform: scale(1, 1) translatex(100vw) translatez(0);
-        opacity: 1;
-    }
-
-    100% {
-        transform: scale(1, 1) translatex(100vw) translatez(0);
-        opacity: 1;
-    }
-}
-
 
 header {
     position: absolute;
@@ -173,7 +69,7 @@ header h1 a {
     font-size: 35px;
     color: white;
     background: #359381;
-    border-radius: 35px;
+    border-radius: 50px;
     padding: 20px;
     border: none;
 }
